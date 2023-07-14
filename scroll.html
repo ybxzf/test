@@ -1,0 +1,47 @@
+<html>
+
+<body>
+    <div class="aaa" style="border: 1px solid;height: 30vh; overflow-y: auto;scroll-padding-top: 50px;">
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容1</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容2</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容3</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容4</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容5</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容6</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容7</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容8</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容9</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容10</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容11</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容12</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容13</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容14</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容15</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容16</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容2</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容3</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容4</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容5</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容6</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容7</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容8</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容9</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容10</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容11</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容12</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容13</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容14</div>
+        <div style="border: 1px solid;display:flex; justify-content: center;align-items: center;"> 这里是需要滚动的内容15</div>
+        
+    </div>
+    <script>
+       let aaa =document.querySelector('.aaa')
+       console.log(aaa);
+       console.log(aaa.clientHeight);
+       let all= document.querySelectorAll('.aaa div');
+       let y = 16 *23
+       aaa.scrollTo(0,y-0.5*(aaa.clientHeight-23))
+    </script>
+</body>
+
+</html>
