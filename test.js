@@ -23,3 +23,47 @@ var str = 'aaaabbbbssssxcccddddsdfscxxasa'
       console.log('出现的次数是'+max);
     }
   }
+<div class="container">
+  <div class="left"></div>
+  <div class="right"></div>
+</div>
+
+
+.container {
+  position: relative;
+  display: flex;
+  width: 500px; /* 容器宽度 */
+}
+
+.left {
+  width: 50%;
+  height: 300px; /* div高度 */
+  border-right: 1px solid #000; /* 连接div的垂直边框 */
+}
+
+.right {
+  width: 50%;
+  height: 300px;
+  border-left: 1px solid #000; /* 连接div垂直边框 */
+  position: relative;
+}
+
+.right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 10px; /* 长度 */
+  height: 1px; /* 粗细 */
+ -color: black;
+}
+
+.right:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 10px;
+  height: 1px;
+  background-color: black;
+}
