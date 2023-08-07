@@ -23,47 +23,10 @@ var str = 'aaaabbbbssssxcccddddsdfscxxasa'
       console.log('出现的次数是'+max);
     }
   }
-<div class="container">
-  <div class="left"></div>
-  <div class="right"></div>
+
+<div style="width: 200px;height: 200px;border: 1px solid red;">
+    <svg width="100%" height="100%">
+        <path d="M 10 100 C 150 100, 50 10, 190 10" fill="none" stroke="red" />
+  <path d="M 10 100 C 150 100, 50 190, 190 190" fill="none" stroke="red" />
+    </svg>
 </div>
-
-
-.container {
-  position: relative;
-  display: flex;
-  width: 500px; /* 容器宽度 */
-}
-
-.left {
-  width: 50%;
-  height: 300px; /* div高度 */
-  border-right: 1px solid #000; /* 连接div的垂直边框 */
-}
-
-.right {
-  width: 50%;
-  height: 300px;
-  border-left: 1px solid #000; /* 连接div垂直边框 */
-  position: relative;
-}
-
-.right:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  width: 10px; /* 长度 */
-  height: 1px; /* 粗细 */
- -color: black;
-}
-
-.right:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  width: 10px;
-  height: 1px;
-  background-color: black;
-}
